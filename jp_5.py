@@ -13,6 +13,6 @@ else:
     rate = 5.0
     time = 2.0
 
-simple_interest = (principal * rate * time) / 100
+simple_interest = (principle * rate * time) / 100
 
 print(f"Simple Interest = {simple_interest:.2f}")
