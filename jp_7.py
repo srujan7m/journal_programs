@@ -1,10 +1,15 @@
 import sys
 
-if len(sys.argv) <= 1:
-    print("Error: No scores passed. Provide scores like: python jp_7.py 10 20 30")
-    sys.exit(1)
 
-scores = [float(num) for num in sys.argv[1:]]
+default_scores = [10, 20, 30, 40, 50]
+
+
+if len(sys.argv) <= 1:
+    scores = default_scores
+    print("No scores provided. Using default values:", scores)
+else:
+
+    scores = [float(num) for num in sys.argv[1:]]
 
 total = sum(scores)
 average = total / len(scores)
